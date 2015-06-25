@@ -1,18 +1,4 @@
-(function(factory) {
-    'use strict';
-
-    if (typeof define === 'function' && define.amd) {
-        // AMD. Register as an anonymous module.
-        define(['jquery'], factory);
-    }
-    else if (typeof exports === 'object') {
-        // CommonJS
-        factory(require('jquery'));
-    } else {
-        // Browser globals
-        factory(jQuery);
-    }
-}(function($) {
+(function($) {
     'use strict';
 
     /**
@@ -422,4 +408,4 @@
         });
     };
 
-}));
+})(jQuery);
